@@ -1,7 +1,9 @@
-const credenciales = require('../models/db').default;
+const credenciales = require('../models/db');
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 const mysql = require("mysql");
+
+
 
 module.exports.login = (req, res) =>{
     //usar: https://bcrypt-generator.com/   para generacion de contraseñas hash

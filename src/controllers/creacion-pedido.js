@@ -1,4 +1,4 @@
-const credenciales = require('../models/db').default;
+const credenciales = require('../models/db');
 const mysql = require("mysql");
 
 async function generateUniqueCode(fecha, connection) {

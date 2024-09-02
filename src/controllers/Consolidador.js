@@ -1,4 +1,4 @@
-const credenciales = require('../models/db').default;
+const credenciales = require('../models/db');
 const mysql = require("mysql");
 module.exports.consolidador_detalle = (req, res) => {
     const { dateFrom, dateTo, contratista, sector, servicio, pdi} = req.query;
@@ -82,6 +82,7 @@ module.exports.consolidador_detalle = (req, res) => {
             console.log(err);
             res.status(500).send('Error en la consulta de la base de datos');
         } else {
+            console.log('Query result:', result);
             res.send(result);
         }
     });
@@ -163,6 +164,7 @@ module.exports.consolidador_pedidos = (req, res) => {
             console.log(err);
             res.status(500).send('Error en la consulta de la base de datos');
         } else {
+
             res.send(result);
         }
     });

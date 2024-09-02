@@ -1,5 +1,4 @@
-const connection = require('../models/db').default
-
+const connection = require('../models/db');
 module.exports.ping = (req, res) =>{
     const consult = 'SELECT * FROM usuarios';
 

@@ -1,6 +1,6 @@
 
 
-const credenciales = require('../models/db').default;
+const credenciales = require('../models/db');
 const mysql = require("mysql");
 
 module.exports.contratistas = (req, res) =>{

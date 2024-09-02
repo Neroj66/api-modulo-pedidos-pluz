@@ -1,5 +1,5 @@
 
-const credenciales = require('../models/db').default;
+const credenciales = require('../models/db');
 const mysql = require("mysql");
 
 const getCurrentMaterials = (pedidoId, connection) => {

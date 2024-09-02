@@ -1,5 +1,6 @@
-const credenciales = require('../models/db').default;
+const credenciales = require('../models/db');
 const mysql = require("mysql");
+
 module.exports.pedidos = (req, res) =>{
     var connection = mysql.createConnection(credenciales);
     connection.query( 

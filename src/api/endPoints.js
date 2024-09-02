@@ -5,7 +5,7 @@ const { login,obtenerUser } = require('../controllers/loginController');
 const { create } = require('../controllers/creacion-pedido');
 const { update, delete_ped, send_generacion } = require('../controllers/update-delete-pedido');
 const { pedidos, pedidos_detalle, pedidos_detalle_id, pedidosBySector, pedidosByLiquidador, pedidosByUser } = require('../controllers/obtención-pedidos');
-const { consolidador_detalle, consolidador_pedidos, consolidador_logistica } = require('../controllers/Consolidador');
+const {  consolidador_pedidos, consolidador_logistica, consolidador_detalle } = require('../controllers/Consolidador');
 const { Aprobar, Validar } = require('../controllers/aprobar_validar');
 const { contratistas, sectores, servicios, materiales, sectorByContratista, serviciosBySector, pdiByContratista } = require('../controllers/otras_operaciones');
 
@@ -33,7 +33,7 @@ router.get('/pedidos_detalle', pedidos_detalle);
 
 router.get('/pedidos_detalle/:pedido_id', pedidos_detalle_id);
 
-router.get('/pedidos_detalle/consolidador', consolidador_detalle);
+router.get('/consolidador/detalle', consolidador_detalle);
 
 router.get('/consolidador/pedidos', consolidador_pedidos);
 
