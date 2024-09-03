@@ -82,7 +82,6 @@ module.exports.consolidador_detalle = (req, res) => {
             console.log(err);
             res.status(500).send('Error en la consulta de la base de datos');
         } else {
-            console.log('Query result:', result);
             res.send(result);
         }
     });
