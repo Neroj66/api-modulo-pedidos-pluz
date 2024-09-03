@@ -1,9 +1,9 @@
 
 const credenciales = {
-    host: "localhost",
-    user: "root",
-    password: "",
-    database: "pedidos_ora"
+    host: "pyg-server.mysql.database.azure.com",
+    user: "pyg",
+    password: "Pluz2024$",
+    database: "pedidos-ora"
 };
 
 module.exports = credenciales;
