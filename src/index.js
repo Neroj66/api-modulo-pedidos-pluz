@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-const port = 4001
+//const port = 4001
 const routes = require('./api/endPoints')
 const cors = require('cors');
 
@@ -10,12 +10,13 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.use(cors({
-    origin: ["http://10.155.241.37:4000"],
-    methods: ["GET", "POST","PUT","DELETE"]
+    origin: ["https://ashy-grass-009f4900f.5.azurestaticapps.net"],
+    methods: ["GET", "POST","PUT","DELETE"],
+    allowedHeaders: ['Content-Type', 'Authorization'] // Asegúrate de permitir encabezados necesarios
 }));
 
 app.use('/', routes);
 
-app.listen(port, () => {
+/*app.listen(port, () => {
     console.log(`Corriendo servidor en el puerto ${port}`)
-})
+})*/
