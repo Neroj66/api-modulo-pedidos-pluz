@@ -5,7 +5,7 @@ const routes = require('./api/endPoints')
 const cors = require('cors');
 
 
-app.use(express.json());
+app.use(express.json()); 
 
 app.use(express.urlencoded({ extended: true }));
 
