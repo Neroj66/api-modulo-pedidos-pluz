@@ -5,7 +5,7 @@
   
   "scripts": {
     "test": "echo \"Error: no test specified\"",
-    "start": "nodemon src/index.js",
+    "start": "node src/index.js",
     "ejmmm": "nodemon src/index.js"
   },
   "author": "",
