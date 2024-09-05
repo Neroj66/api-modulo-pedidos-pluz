@@ -9,11 +9,7 @@ app.use(express.json());
 
 app.use(express.urlencoded({ extended: true }));
  
-app.use(cors({
-    origin: ["https://ashy-grass-009f4900f.5.azurestaticapps.net"],
-    methods: ["GET", "POST","PUT","DELETE"],
-    allowedHeaders: ['Content-Type', 'Authorization'] // Asegúrate de permitir encabezados necesarios
-}));
+app.use(cors());
 
 app.use('/', routes);
 
