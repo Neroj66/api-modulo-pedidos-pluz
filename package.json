@@ -5,7 +5,7 @@
   
   "scripts": {
     "test": "echo \"Error: no test specified\"",
-    "start": "node --watch  src/index.js",
+    "start": "nodemon src/index.js",
     "ejmmm": "nodemon src/index.js"
   },
   "author": "",
