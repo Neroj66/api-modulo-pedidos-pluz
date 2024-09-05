@@ -23,4 +23,4 @@ app.get('/',(req, res)=> {
 
 app.listen(port, () => {
     console.log(`Corriendo servidor en el puerto ${port}`)
-}
+})
