@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-//const port = 4001
+const port = process.env.PORT || 4001
 const routes = require('./api/endPoints')
 const cors = require('cors');
 
@@ -17,6 +17,10 @@ app.use(cors({
 
 app.use('/', routes);
 
-/*app.listen(port, () => {
+app.get('/',(req, res)=> {
+    res.send('Hello! there');
+});
+
+app.listen(port, () => {
     console.log(`Corriendo servidor en el puerto ${port}`)
-})*/
+}
